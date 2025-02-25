@@ -34,7 +34,7 @@ const DynamicContent = () => {
             date: 'February 2025',
             description: 'Proposed a new color palette for a beloved building on campus.',
             category: 'Category 2',
-            content: '# Detailed content about painting project...',
+            content: 'This is a filler project for right now. Thanks for stopping by!',
             status: 'coming'
         },
         {
@@ -43,7 +43,7 @@ const DynamicContent = () => {
             date: 'January 2025',
             description: 'Aced it!',
             category: 'Category 1',
-            content: 'Detailed content about syllabus quiz...',
+            content: 'This is a filler project for right now. Thanks for stopping by!',
             status: 'coming'
         }
     ];
@@ -58,6 +58,8 @@ const DynamicContent = () => {
     // Render item content when selected
     const renderItemContent = (item) => (
         <div className="item-content">
+            <div className="spacer-3em"></div>
+    
             {/* <h2>{item.title}</h2>
             <div className="item-date">{item.date}</div> */}
             <ReactMarkdown rehypePlugins={[rehypeRaw]}>{item.content}</ReactMarkdown>

@@ -1,7 +1,7 @@
 # Improving Figma's Layer Navigation
 *February 2025*
 
-![navigating Figma layers](https://ocarson1.github.io/id-portfolio/images/figma.gif)
+![navigating Figma layers](https://ocarson1.github.io/id-portfolio/images/figma-2.gif)
 
 ## Background
 Figma is the newest industry standard tool for designers of all kinds who work on web and mobile projects. As such, its interface is thoughtfully crafted as to give users an experience worth aspiring to create in their own projects.

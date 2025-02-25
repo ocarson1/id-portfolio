@@ -96,4 +96,9 @@ img {
   display: block;
   max-height:420px;
   margin: auto;
+
+}
+
+.spacer-3em {
+  height: 3em
 }
