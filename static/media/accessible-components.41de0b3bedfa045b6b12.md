@@ -1,7 +1,7 @@
 # Improving Figma's Layer Navigation
 *February 2025*
 
-![navigating Figma layers](../images/figma.gif)
+![navigating Figma layers](https://ocarson1.github.io/id-portfolio/images/figma.gif)
 
 ## Background
 Figma is the newest industry standard tool for designers of all kinds who work on web and mobile projects. As such, its interface is thoughtfully crafted as to give users an experience worth aspiring to create in their own projects.
@@ -10,15 +10,15 @@ I took a look at Figma's Layers Panel to see if there were any ways to improve a
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <div style="width: 30%;">
-    <img src="../images/figma.png" alt="Image 1" style="width: 100%;">
+    <img src="https://ocarson1.github.io/id-portfolio/images/figma.png" alt="Image 1" style="width: 100%;">
     <p style="text-align: center;">Figma's Layers panel</p>
   </div>
   <div style="width: 30%;">
-    <img src="../images/finder.png" alt="Image 2" style="width: 100%;">
+    <img src="https://ocarson1.github.io/id-portfolio/images/finder.png" alt="Image 2" style="width: 100%;">
     <p style="text-align: center;">Finder's file navigation</p>
   </div>
   <div style="width: 30%;">
-    <img src="../images/vscode.png" alt="Image 3" style="width: 100%;">
+    <img src="https://ocarson1.github.io/id-portfolio/images/vscode.png" alt="Image 3" style="width: 100%;">
     <p style="text-align: center;">VSCode's Explorer panel</p>
   </div>
 </div>
