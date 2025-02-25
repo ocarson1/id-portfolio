@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import DynamicContent from './DynamicContent';
 import Clickable from './Clickable';
 
+
 function App() {
 
 
@@ -19,52 +20,6 @@ function App() {
           </div>
         </div>
         <DynamicContent></DynamicContent>
-
-
-        {/* <div className="bottom">
-          <div class="sub-nav">
-            <div class="nav">
-              <div>Assignments</div>
-              <div id="head-links">
-                <div>Category 1</div>
-                <div>Category 2</div>
-              </div>
-            </div>
-          </div>
-          <div class="dynamic-container">
-            <div class="index">
-              <div class="item-1">
-                <div class="item-title">Accessible Components</div>
-                <div class="item-date">February 2025</div>
-              </div>
-              <div>Redesigned an accordion menu for _______.</div>
-              <div></div>
-
-              <div>Read more</div>
-            </div>
-            <div class="item">
-              <div class="item-1">
-                <div class="item-title">Painting the CIT</div>
-                <div class="item-date">February 2025</div>
-              </div>
-              <div>Proposed a new color palette for a beloved building on campus.</div>
-              <div></div>
-
-              <div class="faded">Coming soon</div>
-            </div>
-            <div class="item">
-              <div class="item-1">
-                <div class="item-title">Syllabus Quiz</div>
-                <div class="item-date">January 2025</div>
-              </div>
-              <div>Aced it!</div>
-              <div></div>
-              <div class="faded">Coming soon</div>
-            </div>
-            <div class="spacer-420"></div>
-          </div>
-
-        </div> */}
       </div>
       <footer>
         <p>Footer with legal info</p>
