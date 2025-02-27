@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Clickable from './Clickable';
+import penny from './images/penny.png'
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,9 +26,13 @@ const Navbar = () => {
       <div className={`sticky-nav ${isVisible ? 'active' : ''}`}>
       
       <div class="nav">
-              <Clickable>Owen Carson</Clickable>
+        <div class="horizontal">
+          <div class="logo-container"></div>
+        <img class="logo" src={penny}></img>
+              <Clickable className={`my-name ${isVisible ? 'active' : ''}`}>Owen Carson</Clickable>
+              </div>
               <div id="head-links">
-                <Clickable>LinkedIn</Clickable>
+                <Clickable>Email</Clickable>
                 <Clickable>Resume</Clickable>
               </div>
             </div>

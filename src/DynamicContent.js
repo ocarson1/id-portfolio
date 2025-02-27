@@ -16,33 +16,35 @@ const DynamicContent = () => {
   // Setting the content from the Markdown file
     }, []);
 
+    const categories = ['Web', 'Exhibition', 'Education']
+
 
     // Sample content data - you can replace this with your actual content
     const items = [
         {
             id: 1,
-            title: 'Accessible Components',
+            title: "Figma",
             date: 'February 2025',
             description: 'Redesigned an accordion menu for _______.',
-            category: 'Category 1',
+            category: 'Web',
             content: markdownContent,
-            status: 'active'
+            status: 'active',
         },
         {
             id: 2,
-            title: 'Painting the CIT',
+            title: 'Handwoven Youth',
             date: 'February 2025',
             description: 'Proposed a new color palette for a beloved building on campus.',
-            category: 'Category 2',
+            category: 'Exhibition',
             content: 'This is a filler project for right now. Thanks for stopping by!',
             status: 'coming'
         },
         {
             id: 3,
-            title: 'Syllabus Quiz',
+            title: 'Eternal September',
             date: 'January 2025',
             description: 'Aced it!',
-            category: 'Category 1',
+            category: 'Web',
             content: 'This is a filler project for right now. Thanks for stopping by!',
             status: 'coming'
         }
@@ -84,14 +86,14 @@ const DynamicContent = () => {
                         </div>
                         <div>{item.description}</div>
                         <div></div>
-                        <div className={item.status === 'coming' ? 'faded' : ''}>
+                        {/* <div className={item.status === 'coming' ? 'faded' : ''}>
                             {item.status === 'coming' ? 'Coming soon' : 'Read more'}
-                        </div>
+                        </div> */}
                     </Clickable>
                 </div>
 
             ))}
-            <div className="spacer-420"></div>
+            {/* <div className="spacer-420"></div> */}
         </div>
     );
 
@@ -126,21 +128,30 @@ const DynamicContent = () => {
                         </Clickable>
                         <Clickable
                             onClick={() => {
-                                setActiveCategory('Category 1');
+                                setActiveCategory(categories[0]);
                                 setActiveItem(null);
                             }}
-                            className={activeCategory === 'Category 1' ? 'active' : ''}
+                            className={activeCategory === categories[0] ? 'active' : ''}
                         >
-                            Category 1
+                            {categories[0]}
                         </Clickable>
                         <Clickable
                             onClick={() => {
-                                setActiveCategory('Category 2');
+                                setActiveCategory(categories[1]);
                                 setActiveItem(null);
                             }}
-                            className={` ${activeCategory === 'Category 2' ? 'active' : ''}`}
+                            className={` ${activeCategory === categories[1] ? 'active' : ''}`}
                         >
-                            Category 2
+                            {categories[1]}
+                        </Clickable>
+                        <Clickable
+                            onClick={() => {
+                                setActiveCategory(categories[2]);
+                                setActiveItem(null);
+                            }}
+                            className={` ${activeCategory === categories[2] ? 'active' : ''}`}
+                        >
+                            {categories[2]}
                         </Clickable>
                     </div>
                 </div>
