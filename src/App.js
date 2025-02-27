@@ -18,20 +18,20 @@ function App() {
       <Navbar></Navbar>
 
         <div className="app-grid">
-        <div className="spacer-90"></div>
           <div className="top">
+          <div className="spacer-90"></div>
 
-            <div id="info">  <div id="blurb">   <p>Owen Carson is a web developer and artist based in Providence, Rhode Island.</p>
+            <div id="info">  <div id="blurb">   <p>Owen Carson is a web developer and creative producer based in Providence, Rhode Island.</p>
               {/* <p>Currently: freelancing and working on Eternal September.</p>
           <p>Previously: Building an exhibition for Jeannie</p> */}
               {/* <a>More about me</a> */}
             </div>
+
             </div>
+            <div className="spacer-90"></div>
+
           </div>
           <DynamicContent></DynamicContent>
-          <About></About>
-
-
         </div>
         <footer>
           <p>Footer with legal info</p>

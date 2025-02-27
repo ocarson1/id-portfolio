@@ -5,8 +5,8 @@
       
         const style = {
           cursor: 'pointer',
-          color: isHovered ? '#888' : 'inherit', // 'inherit' retains the default color
-          transition: 'color 0.1s ease', // smooth transition effect
+          opacity: isHovered ? '0.5' : 'inherit', // 'inherit' retains the default color
+          transition: 'opacity 0.1s ease', // smooth transition effect
         };
       
         return (

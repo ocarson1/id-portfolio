@@ -3,6 +3,7 @@ import accessibleComponents from './content/accessible-components.md'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
 import Clickable from './Clickable';
+import About from './About'
 
 const DynamicContent = () => {
     // State to track which content should be displayed
@@ -23,31 +24,50 @@ const DynamicContent = () => {
     const items = [
         {
             id: 1,
-            title: "Figma",
-            date: 'February 2025',
-            description: 'Redesigned an accordion menu for _______.',
-            category: 'Web',
+            title: "Web Collage",
+            date: 'Current',
+            description: 'Visualizing trending Google searches through a public exhibition',
+            category: 'Web Exhibition',
             content: markdownContent,
             status: 'active',
         },
         {
             id: 2,
-            title: 'Handwoven Youth',
-            date: 'February 2025',
-            description: 'Proposed a new color palette for a beloved building on campus.',
-            category: 'Exhibition',
+            title: 'Brown Arts Institute',
+            date: 'Current',
+            description: 'Assisting production staff and building a hypermedia wiki',
+            category: 'Web Exhibition',
             content: 'This is a filler project for right now. Thanks for stopping by!',
             status: 'coming'
         },
         {
             id: 3,
-            title: 'Eternal September',
-            date: 'January 2025',
-            description: 'Aced it!',
+            title: 'Handwoven Youth',
+            date: '2024',
+            description: 'Developed a website for an emerging youth literacy nonprofit',
+            category: 'Web Education',
+            content: 'This is a filler project for right now. Thanks for stopping by!',
+            status: 'coming'
+        },
+        {
+            id: 4,
+            title: 'AAPI History Museum',
+            date: '2024',
+            description: 'Co-designed and fabricated a travelling local history exhibit',
+            category: 'Education Exhibition',
+            content: 'This is a filler project for right now. Thanks for stopping by!',
+            status: 'coming'
+        },
+        {
+            id: 5,
+            title: 'brown.edu',
+            date: '2023',
+            description: 'Migrated 600+ pages of content for univeristy site redesign',
             category: 'Web',
             content: 'This is a filler project for right now. Thanks for stopping by!',
             status: 'coming'
         }
+
     ];
 
 
@@ -55,17 +75,17 @@ const DynamicContent = () => {
     // Filter items based on active category
     const filteredItems = activeCategory === 'all'
         ? items
-        : items.filter(item => item.category === activeCategory);
+        : items.filter(item => item.category.includes(activeCategory));
 
     // Render item content when selected
     const renderItemContent = (item) => (
         <div className="item-content">
-            <div className="spacer-3em"></div>
+            <div className="spacer-50"></div>
     
             {/* <h2>{item.title}</h2>
             <div className="item-date">{item.date}</div> */}
             <ReactMarkdown rehypePlugins={[rehypeRaw]}>{item.content}</ReactMarkdown>
-            <div className="spacer-420"></div>
+            <div className="spacer-90"></div>
             
         </div>
     );
@@ -85,7 +105,11 @@ const DynamicContent = () => {
                             <div className="item-date">{item.date}</div>
                         </div>
                         <div>{item.description}</div>
-                        <div></div>
+                        <div className="tag-guide">
+                            <div style={{color:'RGBA(38, 187, 204, 0.75)'}}>{item.category.includes(categories[0]) ? '●' : ''}</div>
+                            <div style={{color:'RGBA(255, 62, 146, 0.75)'}}>{item.category.includes(categories[1]) ? '●' : ''}</div>
+                            <div style={{color:'RGBA(255, 217, 64, 0.75)'}}>{item.category.includes(categories[2]) ? '●' : ''}</div>
+                        </div>
                         {/* <div className={item.status === 'coming' ? 'faded' : ''}>
                             {item.status === 'coming' ? 'Coming soon' : 'Read more'}
                         </div> */}
@@ -159,6 +183,7 @@ const DynamicContent = () => {
             <div className="dynamic-container">
                 {activeItem ? renderItemContent(activeItem) : renderIndex()}
             </div>
+            <About></About>
         </div>
     );
 };

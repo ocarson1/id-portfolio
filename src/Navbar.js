@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 20) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -23,20 +23,20 @@ const Navbar = () => {
   }, []); // Empty dependency array means this effect runs once on mount
 
   return (
-      <div className={`sticky-nav ${isVisible ? 'active' : ''}`}>
-      
+    <div className={`sticky-nav ${isVisible ? 'active' : ''}`}>
+
       <div class="nav">
-        <div class="horizontal">
+        <Clickable class="horizontal">
           <div class="logo-container"></div>
-        <img class="logo" src={penny}></img>
-              <Clickable className={`my-name ${isVisible ? 'active' : ''}`}>Owen Carson</Clickable>
-              </div>
-              <div id="head-links">
-                <Clickable>Email</Clickable>
-                <Clickable>Resume</Clickable>
-              </div>
-            </div>
-            </div>
+          <img class="logo" src={penny}></img>
+          <div className={`my-name ${isVisible ? 'active' : ''}`}>Owen Carson</div>
+      </Clickable>
+      <div id="head-links">
+        <Clickable>Email</Clickable>
+        <Clickable>Resume</Clickable>
+      </div>
+    </div>
+            </div >
   );
 };
 
