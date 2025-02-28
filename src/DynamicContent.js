@@ -10,6 +10,10 @@ import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
 import Clickable from './Clickable';
 import About from './About'
+import CursorPreview from './CursorPreview';
+
+import penny from './images/penny.png'
+
 
 
 
