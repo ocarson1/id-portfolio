@@ -1,21 +1,50 @@
 import { useState, useEffect } from 'react';
 import accessibleComponents from './content/accessible-components.md'
+import hwy from './content/handwoven-youth.md'
+import aapi from './content/aapi-history.md'
+import ouc from './content/brown-ouc.md'
+import webcollage from './content/web-collage.md'
+import bai from './content/bai.md'
+
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
 import Clickable from './Clickable';
 import About from './About'
 
+
+
 const DynamicContent = () => {
     // State to track which content should be displayed
-    const [activeCategory, setActiveCategory] = useState('all');
+    const [activeCategory, setActiveCategory] = useState('');
     const [activeItem, setActiveItem] = useState(null);
     const [markdownContent, setMarkdownContent] = useState('');
 
     useEffect(() => {
         fetch(accessibleComponents)
-        .then((response) => response.text()).then((text) => {setMarkdownContent(text)})
-  // Setting the content from the Markdown file
+            .then((response) => response.text()).then((text) => { setMarkdownContent(text) })
+        // Setting the content from the Markdown file
     }, []);
+
+    useEffect(() => {
+        if (activeItem && activeItem.content) {
+            fetch(activeItem.content)
+                .then((response) => response.text())
+                .then((text) => { setMarkdownContent(text) })
+                .catch(error => {
+                    console.error("Error loading content:", error);
+                });
+        }
+    }, [activeItem]);
+
+    // const getContent = (content) => {
+    //     fetch(content)
+    //         .then((response) => response.text())
+    //         .then((text) => {setMarkdownContent(text)})
+    //         .catch(error => {
+    //             console.error("Error loading content:", error);
+    //         });
+    // };
+
 
     const categories = ['Web', 'Exhibition', 'Education']
 
@@ -28,7 +57,7 @@ const DynamicContent = () => {
             date: 'Current',
             description: 'Visualizing trending Google searches through a public exhibition',
             category: 'Web Exhibition',
-            content: markdownContent,
+            content: webcollage,
             status: 'active',
         },
         {
@@ -37,7 +66,7 @@ const DynamicContent = () => {
             date: 'Current',
             description: 'Assisting production staff and building a hypermedia wiki',
             category: 'Web Exhibition',
-            content: 'This is a filler project for right now. Thanks for stopping by!',
+            content: bai,
             status: 'coming'
         },
         {
@@ -46,7 +75,7 @@ const DynamicContent = () => {
             date: '2024',
             description: 'Developed a website for an emerging youth literacy nonprofit',
             category: 'Web Education',
-            content: 'This is a filler project for right now. Thanks for stopping by!',
+            content: hwy,
             status: 'coming'
         },
         {
@@ -55,7 +84,7 @@ const DynamicContent = () => {
             date: '2024',
             description: 'Co-designed and fabricated a travelling local history exhibit',
             category: 'Education Exhibition',
-            content: 'This is a filler project for right now. Thanks for stopping by!',
+            content: aapi,
             status: 'coming'
         },
         {
@@ -64,7 +93,7 @@ const DynamicContent = () => {
             date: '2023',
             description: 'Migrated 600+ pages of content for univeristy site redesign',
             category: 'Web',
-            content: 'This is a filler project for right now. Thanks for stopping by!',
+            content: ouc,
             status: 'coming'
         }
 
@@ -73,20 +102,16 @@ const DynamicContent = () => {
 
 
     // Filter items based on active category
-    const filteredItems = activeCategory === 'all'
+    const filteredItems = activeCategory === ''
         ? items
         : items.filter(item => item.category.includes(activeCategory));
 
     // Render item content when selected
-    const renderItemContent = (item) => (
+    const renderItemContent = () => (
         <div className="item-content">
             <div className="spacer-50"></div>
-    
-            {/* <h2>{item.title}</h2>
-            <div className="item-date">{item.date}</div> */}
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{item.content}</ReactMarkdown>
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdownContent}</ReactMarkdown>
             <div className="spacer-90"></div>
-            
         </div>
     );
 
@@ -95,10 +120,10 @@ const DynamicContent = () => {
         <div className="index">
             {filteredItems.map(item => (
                 <div>
-                    <Clickable
+                    <Clickable scrollThreshold='360' scrollType='instant'
                         key={item.id}
                         className="item"
-                        onClick={() => setActiveItem(item)}
+                        onClick={() => {setActiveCategory(null); setActiveItem(item)}}
                     >
                         <div className="item-1">
                             <div className="item-title">{item.title}</div>
@@ -106,9 +131,9 @@ const DynamicContent = () => {
                         </div>
                         <div>{item.description}</div>
                         <div className="tag-guide">
-                            <div style={{color:'RGBA(38, 187, 204, 0.75)'}}>{item.category.includes(categories[0]) ? '●' : ''}</div>
-                            <div style={{color:'RGBA(255, 62, 146, 0.75)'}}>{item.category.includes(categories[1]) ? '●' : ''}</div>
-                            <div style={{color:'RGBA(255, 217, 64, 0.75)'}}>{item.category.includes(categories[2]) ? '●' : ''}</div>
+                            <div style={{ color: 'RGBA(38, 187, 204, 0.75)' }}>{item.category.includes(categories[0]) ? '●' : ''}</div>
+                            <div style={{ color: 'RGBA(255, 62, 146, 0.75)' }}>{item.category.includes(categories[1]) ? '●' : ''}</div>
+                            <div style={{ color: 'RGBA(255, 217, 64, 0.75)' }}>{item.category.includes(categories[2]) ? '●' : ''}</div>
                         </div>
                         {/* <div className={item.status === 'coming' ? 'faded' : ''}>
                             {item.status === 'coming' ? 'Coming soon' : 'Read more'}
@@ -125,32 +150,38 @@ const DynamicContent = () => {
         <div className="bottom">
             <div className="sub-nav">
                 <div className="nav">
-                    <div>
-                    <Clickable
-                        onClick={() => {
-                            setActiveCategory('all');
-                            setActiveItem('')
-                        }}
+                    <div className="horizontal">
+                        <Clickable scrollThreshold='360'
+                            onClick={() => {
+                                setActiveCategory('');
+                                setActiveItem('')
 
-                    >
-                        
-                        {activeItem ? `Selected Projects / ${activeItem.title}` : "Selected Projects"}
-                    
-                    
-                    </Clickable>
+
+
+                                // if window is scrolled past X, scroll to X. Otherwise do nothing
+                            }}
+                        >
+                            Selected Projects
+                        </Clickable>    
+                        {activeItem || activeCategory ? '\u00A0/\u00A0'  : ""}
+
+                        <Clickable scrollThreshold="360">
+                            {activeItem ? `${activeItem.title}` : ""}
+                            {activeCategory ? `${activeCategory}` : ""}
+                        </Clickable>
                     </div>
                     <div id="head-links">
-                        <Clickable
+                        <Clickable scrollThreshold='360'
                             onClick={() => {
                                 console.log("clicked");
-                                setActiveCategory('all');
+                                setActiveCategory('');
                                 setActiveItem(null);
                             }}
                             className={activeCategory === 'all' ? 'active' : ''}
                         >
                             All
                         </Clickable>
-                        <Clickable
+                        <Clickable scrollThreshold='360' scrollType='instant'
                             onClick={() => {
                                 setActiveCategory(categories[0]);
                                 setActiveItem(null);
@@ -159,7 +190,7 @@ const DynamicContent = () => {
                         >
                             {categories[0]}
                         </Clickable>
-                        <Clickable
+                        <Clickable scrollThreshold='360' scrollType='instant'
                             onClick={() => {
                                 setActiveCategory(categories[1]);
                                 setActiveItem(null);
@@ -168,7 +199,7 @@ const DynamicContent = () => {
                         >
                             {categories[1]}
                         </Clickable>
-                        <Clickable
+                        <Clickable scrollThreshold='360' scrollType='instant'
                             onClick={() => {
                                 setActiveCategory(categories[2]);
                                 setActiveItem(null);

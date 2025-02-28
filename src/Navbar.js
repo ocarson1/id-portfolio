@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Clickable from './Clickable';
 import penny from './images/penny.png'
 
 const Navbar = () => {
+
   const [isVisible, setIsVisible] = useState(false);
+  const topRef = useRef(null);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +26,10 @@ const Navbar = () => {
   }, []); // Empty dependency array means this effect runs once on mount
 
   return (
-    <div className={`sticky-nav ${isVisible ? 'active' : ''}`}>
+    <div ref={topRef} className={`sticky-nav ${isVisible ? 'active' : ''}`}>
 
-      <div class="nav">
-        <Clickable class="horizontal">
+      <div class="nav" >
+        <Clickable class="horizontal" scrollThreshold='0'>
           <div class="logo-container"></div>
           <img class="logo" src={penny}></img>
           <div className={`my-name ${isVisible ? 'active' : ''}`}>Owen Carson</div>
