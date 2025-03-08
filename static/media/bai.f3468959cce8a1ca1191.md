@@ -1,6 +1,8 @@
-# Improving Figma's Layer Navigation
+# Brown Arts Institute
 *February 2025*
-
+<div className="FU" style="width:100%">
+<iframe src="https://wiki.eternal-september.net" title="description" style="width:100%; height:700px"></iframe>
+</div>
 ![navigating Figma layers](https://ocarson1.github.io/id-portfolio/images/figma-2.gif)
 
 ## Background
