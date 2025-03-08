@@ -1,12 +1,37 @@
-# Improving Figma's Layer Navigation
-*February 2025*
+<div class="two-column">
+<div class="centered">
+<div class="text">
+
+# Figma
+An accessibility tweak for layer selection.
+
+<div><span classname="detail">DURATION:</span> asdfladsf</div>
+<div><span classname="detail">SKILLS:</span> asdfladsf</div>
+<div><span classname="detail">TEAM:</span> Solo</div>
+
+</div>
+</div>
+<div class="image rounded">
 
 ![navigating Figma layers](https://ocarson1.github.io/id-portfolio/images/figma-2.gif)
+</div>
+</div>
 
-## Background
+<div class="spacer-50"></div>
+<div class="two-column">
+<div class="text">
+
+## Overview
+
 Figma is the newest industry standard tool for designers of all kinds who work on web and mobile projects. As such, its interface is thoughtfully crafted as to give users an experience worth aspiring to create in their own projects.
 
+
 I took a look at Figma's Layers Panel to see if there were any ways to improve an already excellent platform. It turns out that there is a great opportunity for improvement when comparing the nested accordion that Figma uses with other similar components used by commonplace applications.
+
+</div>
+<div class="image"></div></div>
+
+<div class="spacer-50"></div>
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
   <div style="width: 30%;">

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+
 import accessibleComponents from './content/accessible-components.md'
 import hwy from './content/handwoven-youth.md'
 import aapi from './content/aapi-history.md'
 import ouc from './content/brown-ouc.md'
 import webcollage from './content/web-collage.md'
 import bai from './content/bai.md'
+import personas from './content/personas.md'
 
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
@@ -12,7 +14,11 @@ import Clickable from './Clickable';
 import About from './About'
 import CursorPreview from './CursorPreview';
 
-import penny from './images/penny.png'
+import penny from './images/penny.png';
+
+
+
+
 
 
 
@@ -49,18 +55,34 @@ const DynamicContent = () => {
     //         });
     // };
 
-
-    const categories = ['Web', 'Exhibition', 'Education']
-
+    const categories = ['Design', 'Software', 'Exhibition']
 
     // Sample content data - you can replace this with your actual content
     const items = [
         {
             id: 1,
+            title: "Wittern",
+            date: "Current",
+            description: "Improving vending machine experience based on college student feedback",
+            category: "Design",
+            content: personas,
+            status: "active"
+        },
+        {
+            id: 2,
+            title: "Figma",
+            date: "February 2025",
+            description: "Proposing an accessibility tweak for the layer selection component",
+            category: "Design",
+            content: accessibleComponents,
+            status: "active"
+        },
+        {
+            id: 1,
             title: "Web Collage",
             date: 'Current',
             description: 'Visualizing trending Google searches through a public exhibition',
-            category: 'Web Exhibition',
+            category: 'Software Exhibition',
             content: webcollage,
             status: 'active',
         },
@@ -69,7 +91,7 @@ const DynamicContent = () => {
             title: 'Brown Arts Institute',
             date: 'Current',
             description: 'Assisting production staff and building a hypermedia wiki',
-            category: 'Web Exhibition',
+            category: 'Software Exhibition',
             content: bai,
             status: 'coming'
         },
@@ -78,7 +100,7 @@ const DynamicContent = () => {
             title: 'Handwoven Youth',
             date: '2024',
             description: 'Developed a website for an emerging youth literacy nonprofit',
-            category: 'Web Education',
+            category: 'Software Education',
             content: hwy,
             status: 'coming'
         },
@@ -87,7 +109,7 @@ const DynamicContent = () => {
             title: 'AAPI History Museum',
             date: '2024',
             description: 'Co-designed and fabricated a travelling local history exhibit',
-            category: 'Education Exhibition',
+            category: 'Design Exhibition',
             content: aapi,
             status: 'coming'
         },
@@ -96,7 +118,7 @@ const DynamicContent = () => {
             title: 'brown.edu',
             date: '2023',
             description: 'Migrated 600+ pages of content for univeristy site redesign',
-            category: 'Web',
+            category: 'Software',
             content: ouc,
             status: 'coming'
         }

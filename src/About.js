@@ -53,7 +53,7 @@ const About = () => {
         <div>
             <div className="sub-nav about">
                 <div className="nav">                <Clickable>About</Clickable>
-                    <div id="head-links"><Clickable >Now</Clickable><Clickable >Bio</Clickable></div></div>
+                    <div id="head-links"><Clickable >Now</Clickable><Clickable >Bio</Clickable><Clickable>Colophon</Clickable></div></div>
 
 
             </div>

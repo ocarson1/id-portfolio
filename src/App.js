@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './Navbar';
@@ -34,9 +35,7 @@ function App() {
           <DynamicContent></DynamicContent>
         </div>
         <footer>
-          <p>Footer with legal info</p>
-          <div></div>
-          <p>maybe a back to top button</p>
+          <Clickable>Back to top</Clickable>
 
         </footer>
 
