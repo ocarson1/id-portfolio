@@ -16,13 +16,6 @@ import CursorPreview from './CursorPreview';
 
 import penny from './images/penny.png';
 
-
-
-
-
-
-
-
 const DynamicContent = () => {
     // State to track which content should be displayed
     const [activeCategory, setActiveCategory] = useState('');

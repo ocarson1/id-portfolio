@@ -5,9 +5,8 @@
 # Figma
 An accessibility tweak for layer selection.
 
-<div><span classname="detail">DURATION:</span> asdfladsf</div>
-<div><span classname="detail">SKILLS:</span> asdfladsf</div>
-<div><span classname="detail">TEAM:</span> Solo</div>
+<div><span classname="detail">DURATION:</span> February 2024 (2 weeks)</div>
+<div><span classname="detail">SKILLS:</span> State models, Figma</div>
 
 </div>
 </div>
@@ -18,8 +17,8 @@ An accessibility tweak for layer selection.
 </div>
 
 <div class="spacer-50"></div>
-<div class="two-column">
-<div class="text">
+<div class="three-column">
+<div class="text flex-3">
 
 ## Overview
 

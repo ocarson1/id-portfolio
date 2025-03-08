@@ -236,7 +236,7 @@ transform: translateY(-10%)
 
 
 
-.two-column {
+.two-column, .three-column {
   display: flex;
   gap: 20px;
   align-items:flex-start;
@@ -244,6 +244,11 @@ transform: translateY(-10%)
 
 .two-column .text {
   flex: 1;
+}
+
+.three-column .image {
+  flex: 1;
+  object-fit: contain;
 }
 
 .two-column .image {
@@ -259,4 +264,8 @@ transform: translateY(-10%)
 
 .two-column.reverse {
   flex-direction: row-reverse;
+}
+
+.flex-3 {
+  flex: 3
 }
