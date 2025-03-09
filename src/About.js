@@ -24,7 +24,8 @@ const About = () => {
                                 <div className="spacer-50"></div>
 
             <div className='two-column'>
-            <img className='image' src={mochi} style={{marginTop:'1em'}}></img>
+                <div className='image rounded'><img src={mochi} style={{transfrom:'translateY(20px'}}></img></div>
+          
 
                 <div className='text'>
                     {/* <h2>{activeCategory.title}</h2>

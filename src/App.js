@@ -34,7 +34,7 @@ function App() {
 
 
           </div>
-
+{/* 
           <Router>
             <Routes>
         <Route path="/" element={<DynamicContent />} />
@@ -42,7 +42,8 @@ function App() {
         <Route path="/item/:itemSlug" element={<DynamicContent />} />
         <Route path="/category/:categorySlug/item/:itemSlug" element={<DynamicContent />} />
       </Routes>
-    </Router>
+    </Router> */}
+    <DynamicContent></DynamicContent>
          </div>
         <footer>
           <Clickable>Back to top</Clickable>
