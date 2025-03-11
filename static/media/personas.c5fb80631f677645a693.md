@@ -25,6 +25,8 @@ Redesigning a vending machine experience based on interviews with college studen
 
 The vending machine in the basement of the List Art Center, produced by The Wittern Group, is a staple for hungry visual art, architecture, and art history students. Based on interviews with users, I developed personas and a storyboard to better understand the user journey for a popular interface on campus.
 
+<br></br>
+
 ## How it works
 
 The vending machine helps hungry students by providing a variety of snack options to purchase 24 hours a day, fully autonomously. Every snack has a corresponding number, which users can type in to preview its price or purchase after paying with either cash, card, or their student ID.
@@ -57,7 +59,9 @@ Before talking to vending machine users, I observed that
 - Users act more quickly when other people are waiting to use the machine
 - Users will often either eat their snack next to the vending machine or promptly leave the room
 
-## INTERVIEWing
+<br></br>
+
+## Interviewing
 
 I rooted my interviews in the following 5 questions:
 
@@ -66,12 +70,12 @@ I rooted my interviews in the following 5 questions:
 <div class="two-column">
 <div class="flex-1">
 
-1. ***Why did you use this particular vending machine today?***
+1. ***How often do you use vending machines on campus?***
 
 </div>
 <div class="text flex-1">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Usage frequency varies significantly among respondents, ranging from users who have established routines and preferences to first-time users who were unaware of the machine's existence. Regular users demonstrate familiarity and confidence, while infrequent users express uncertainty about the process.
 
 </div>
 </div>
@@ -81,12 +85,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="two-column">
 <div class="flex-1">
 
-2. ***How often do you use vending machines on campus?***
+2. ***What goes through your mind when you approach a vending machine?***
 
 </div>
 <div class="text flex-1">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Thoughts typically revolve around immediate needs (hunger, cravings) for experienced users, while newcomers focus on operational concerns and anxiety about potential mistakes. Regular users consider time constraints and product selection, whereas first-time users worry about the mechanics of the transaction and potential social embarrassment.
 
 </div>
 </div>
@@ -96,12 +100,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="two-column">
 <div class="flex-1">
 
-3. ***How would you describe the process of selecting an item?***
+3. ***What actions do you typically take when using a vending machine?***
 
 </div>
 <div class="text flex-1">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+All users check prices, though with different intentions - regular users compare options while new users verify potential costs multiple times. New users exhibit cautious behaviors like inspecting the machine thoroughly and letting others go ahead, while experienced users move with greater efficiency and sometimes engage socially through recommendations.
 
 </div>
 </div>
@@ -111,12 +115,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="two-column">
 <div class="flex-1">
 
-4. ***Were there any points where you hesitated or were unsure about what to do next?***
+4. ***How do you feel during and after using a vending machine?***
 
 </div>
 <div class="text flex-1">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Emotional responses range from casual comfort among frequent users to anxiety and self-consciousness among newcomers. Regular users experience mild time pressure and treat the interaction as a routine break, while first-time users feel a mix of concern about making mistakes and excitement about discovering a new convenience.
 
 </div>
 </div>
@@ -126,12 +130,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <div class="two-column">
 <div class="flex-1">
 
-5. ***Is there anything you wish the vending machine did differently to improve your experience?***
+5. ***What frustrations or challenges have you experienced with vending machines?***
 
 </div>
 <div class="text flex-1">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Common frustrations span both user types but manifest differently. Experienced users are frustrated by stock issues and technical glitches that disrupt their routines, while newcomers struggle with lack of clear instructions, uncertainty about payment processing, and decision paralysis when facing unfamiliar options.
 
 </div>
 </div>
@@ -141,14 +145,71 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Defining users
 
-![empathy map for Confident Calliope](https://ocarson1.github.io/id-portfolio/images/wittern/calliope.png)
+<div class="four-column">
+<div class="text flex-3">
 
-![empathy map for Newbie Norman](https://ocarson1.github.io/id-portfolio/images/wittern/norman.png)
+The main factor creating a difference in user experience for students was whether or not they were frequent vending machine users on campus. I created empathy maps for "Confident Calliope" and "Newbie Norman" to explore these two groups and their different needs.
 
+</div>
+<div class="image flex-1">
+</div>
+</div>
+
+<br></br>
+
+<div class="two-column">
+<div class="centered">
+<div class="text flex-1">
+
+**Confident Calliope is a sculpture student who visits the vending machine frequently.**
+
+She represents familiar yet exploratory users of the vending machine. Her comfort with the interface doesn't eliminate frustration with its limiations. She needs to make quick decisions based on hunger and time.
+
+Interface problems:
+* Limited information about items
+* Comparing item prices requires a large amount of user input during an often limited time window for use
+
+</div>
+</div>
+<div class="image flex-1">
+
+![empathy map for Confident Calliope](https://ocarson1.github.io/id-portfolio/images/wittern/calliope.png)<a style="font-size: 14px; padding-top: 10px; display: flex; justify-content: center">Read in Figma</a>
+
+</div>
+</div>
+
+<br></br>
+
+<div class="two-column">
+<div class="centered">
+<div class="text flex-1">
+
+**Newbie Norman is a student in an art history seminar who has discovered the vending machine for the first time.**
+
+Norman represents the critical first-time user demographic. His experiences highlight usability issues that experienced users have learned to work around but are still design flaws.
+
+Interface problems:
+* Lack of clear instructions causes anxiety about potential money loss
+* No visual confirmation of payment processing increases uncertainty
+
+</div>
+</div>
+<div class="image flex-1">
+
+![empathy map for Newbie Norman](https://ocarson1.github.io/id-portfolio/images/wittern/norman.png)<a style="font-size: 14px; padding-top: 10px; display: flex; justify-content: center">Read in Figma</a>
+
+</div>
+</div>
+
+<br></br>
 
 ## Storyboarding
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; font-size:0.8888em; font-family: Times New Roman">
+I illustrated Newbie Norman's experience to further investigate the experience of the vending machine for first time users.
+
+<br></br>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; font-size:0.8888em;">
 
 <div>
 
@@ -240,9 +301,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </div>
 
+<br></br>
+
 ## Conclusions
 
+<div class="four-column">
+<div class="text flex-3">
 
+Analyzing the List vending machine reveals two main groups of vending machine users, with experienced users navigating around design flaws that remain significant barriers for newcomers. The shared pain points of unreliable payment systems, poor product organization, and insufficient feedback mechanisms affect all users. Future vending machine interfaces should balance maintaining efficiency for frequent users while providing the clarity and guidance needed by newcomers.
+
+</div>
+<div class="image flex-1"></div>
+</div>
 
 </div>
 <div class="image"></div></div>

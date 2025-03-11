@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/id-portfolio/static/css/main.5f5464ab.css",
-    "main.js": "/id-portfolio/static/js/main.57620b84.js",
+    "main.js": "/id-portfolio/static/js/main.5e542fe1.js",
     "static/js/453.2bce5fdf.chunk.js": "/id-portfolio/static/js/453.2bce5fdf.chunk.js",
     "static/media/mochi.png": "/id-portfolio/static/media/mochi.86f23f350fce003bd093.png",
     "static/media/penny.png": "/id-portfolio/static/media/penny.be9459a9f9cd93bed55c.png",
-    "static/media/personas.md": "/id-portfolio/static/media/personas.4e670e40c15f959695f6.md",
+    "static/media/personas.md": "/id-portfolio/static/media/personas.c5fb80631f677645a693.md",
     "static/media/accessible-components.md": "/id-portfolio/static/media/accessible-components.b429a3752d05d81d8f89.md",
     "static/media/bai.md": "/id-portfolio/static/media/bai.f3468959cce8a1ca1191.md",
     "static/media/brown-ouc.md": "/id-portfolio/static/media/brown-ouc.4efaf5524eaa1850bf7e.md",
@@ -15,11 +15,11 @@
     "static/media/aapi-history.md": "/id-portfolio/static/media/aapi-history.e6776c84e9e23a77dabb.md",
     "index.html": "/id-portfolio/index.html",
     "main.5f5464ab.css.map": "/id-portfolio/static/css/main.5f5464ab.css.map",
-    "main.57620b84.js.map": "/id-portfolio/static/js/main.57620b84.js.map",
+    "main.5e542fe1.js.map": "/id-portfolio/static/js/main.5e542fe1.js.map",
     "453.2bce5fdf.chunk.js.map": "/id-portfolio/static/js/453.2bce5fdf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f5464ab.css",
-    "static/js/main.57620b84.js"
+    "static/js/main.5e542fe1.js"
   ]
 }
