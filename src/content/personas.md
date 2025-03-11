@@ -12,7 +12,7 @@ Redesigning a vending machine experience based on interviews with college studen
 </div>
 <div class="image rounded">
 
-![Wittern vending machine in the basement of the List Art Center](https://ocarson1.github.io/id-portfolio/images/wittern.png)
+![Wittern vending machine in the basement of the List Art Center](https://ocarson1.github.io/id-portfolio/images/wittern/wittern.png)
 
 </div>
 </div>
@@ -37,7 +37,7 @@ The vending machine helps hungry students by providing a variety of snack option
 <div class="image flex-1">
 
 
-![annotated diagram of a Wittern vending machine](https://ocarson1.github.io/id-portfolio/images/vending-diagram.png)
+![annotated diagram of a Wittern vending machine](https://ocarson1.github.io/id-portfolio/images/wittern/vending-diagram.png)
 
 </div>
 
@@ -141,42 +141,102 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## Defining users
 
-- include the sound feedback in the storyboard
-- include the retry for vending when the object doesn't hit the floor
+![empathy map for Confident Calliope](https://ocarson1.github.io/id-portfolio/images/wittern/calliope.png)
+
+![empathy map for Newbie Norman](https://ocarson1.github.io/id-portfolio/images/wittern/norman.png)
+
 
 ## Storyboarding
 
-<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; font-family: Times New Roman">
-
-<div>After learning from a friend that there is a vending machine in the basement of the List, Norman goes downstairs during his 15 minute seminar break.</div>
-
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; font-size:0.8888em; font-family: Times New Roman">
 
 <div>
 
-![annotated diagram of a Wittern vending machine](https://ocarson1.github.io/id-portfolio/images/twix/twix-1.png)
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-1.png)
+<div classname="spacer-15"></div>
+1. After learning from a friend that there is a vending machine in the basement of the List, Norman goes downstairs during his 15 minute seminar break.
 
-Because he is hungry, he immediately starts scanning the options. He is craving something sweet.</div>
+</div>
 
-<div>Norman then checks to make sure he can use the machine. He sees a bright sticker saying they accept card and is relieved.</div>
+<div>
 
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-2.png)
+<div classname="spacer-15"></div>
+2. Because he is hungry, he immediately starts scanning the options. He is craving something sweet.
 
-<div>Seeing that there are no prices listed on the vending machine, Norman looks around and sees that the tiny screen says “Select item to view info”</div>
+</div>
 
+<div>
 
-<div>Uncertain of how the numbering system works, Norman looks at the first and last row of the machine to realize that numbers are placed beneath each item. </div>
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-3.png)
+<div classname="spacer-15"></div>
+3. Norman then checks to make sure he can use the machine. He sees a bright sticker saying they accept card and is relieved.
 
-<div>Norman plugs in the numbers for Snickers, then Twix, then Skittles, then Snickers again. He decides that he will get Twix.</div>
+</div>
 
-<div>Guessing what to do, Norman types in the number for Twix, then taps his credit card. Nothing happens inside of the machine, but the screen now says “Money Deposited: $4.00”</div>
+<div>
 
-<div>Anxious that the Twix was only $2.00, Norman warily presses the Twix code again. The machine dispenses his selection.</div>
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-4.png)
+<div classname="spacer-15"></div>
+4. Seeing that there are no prices listed on the vending machine, Norman looks around and sees that the tiny screen says “Select item to view info”
 
-<div>The screen resets to its default view, signaling to Norman that the interaction is over.</div>
+</div>
 
-<div>Norman checks his bank account and sees that only $2.00 were spent.</div>
+<div>
 
-<div>Norman is relieved and eats the Twix quickly before his break ends. He is no longer hungry and knows he has a new resource for the next time he needs a snack.</div>
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-5.png)
+<div classname="spacer-15"></div>
+5. Uncertain of how the numbering system works, Norman looks at the first and last row of the machine to realize that numbers are placed beneath each item.
 
+</div>
+
+<div>
+
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-6.png)
+<div classname="spacer-15"></div>
+6. Norman plugs in the numbers for Snickers, then Twix, then Skittles, then Snickers again. He decides that he will get Twix.
+
+</div>
+
+<div>
+
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-7.png)
+<div classname="spacer-15"></div>
+7. Guessing what to do, Norman types in the number for Twix, then taps his credit card. Nothing happens inside of the machine, but the screen now says “Money Deposited: $4.00”
+
+</div>
+
+<div>
+
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-8.png)
+<div classname="spacer-15"></div>
+8. Anxious that the Twix was only $2.00, Norman warily presses the Twix code again. The machine dispenses his selection.
+
+</div>
+
+<div>
+
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-9.png)
+<div classname="spacer-15"></div>
+9. The screen resets to its default view, signaling to Norman that the interaction is over.
+
+</div>
+
+<div>
+
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-10.png)
+<div classname="spacer-15"></div>
+10. Norman checks his bank account and sees that only $2.00 were spent.
+
+</div>
+
+<div>
+
+![frame of a storyboard for a vending machine user](https://ocarson1.github.io/id-portfolio/images/wittern/twix/twix-11.png)
+<div classname="spacer-15"></div>
+11. Norman is relieved and eats the Twix quickly before his break ends. He is no longer hungry and knows he has a new resource for the next time he needs a snack.
+
+</div>
 
 </div>
 

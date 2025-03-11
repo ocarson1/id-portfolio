@@ -23,12 +23,9 @@ const DynamicContent = () => {
     const [markdownContent, setMarkdownContent] = useState('');
 
     useEffect(() => {
-        fetch(accessibleComponents)
-            .then((response) => response.text()).then((text) => { setMarkdownContent(text) })
-        // Setting the content from the Markdown file
-    }, []);
 
-    useEffect(() => {
+        setMarkdownContent('');
+
         if (activeItem && activeItem.content) {
             fetch(activeItem.content)
                 .then((response) => response.text())
@@ -129,7 +126,8 @@ const DynamicContent = () => {
     const renderItemContent = () => (
         <div className="item-content">
             <div className="spacer-50"></div>
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdownContent}</ReactMarkdown>
+
+            {markdownContent ?  ( <ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdownContent}</ReactMarkdown> ) : (<div class="spacer-420"></div>)}
             <div className="spacer-90"></div>
         </div>
     );
@@ -142,7 +140,7 @@ const DynamicContent = () => {
                     <Clickable scrollThreshold='360' scrollType='instant'
                         key={item.id}
                         className="item"
-                        onClick={() => {setActiveCategory(null); setActiveItem(item)}}
+                        onClick={() => {setActiveItem(item); setActiveCategory(null)}}
                     >
                         <div className="item-1">
                             <div className="item-title">{item.title}</div>
