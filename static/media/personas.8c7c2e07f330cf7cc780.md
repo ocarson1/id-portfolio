@@ -3,7 +3,7 @@
 <div class="text">
 
 # Wittern
-Redesigning a vending machine experience based on interviews with college students.
+Investigating a vending machine experience based on interviews with college students.
 
 <div><span classname="detail">DURATION:</span> March 2024 (2 weeks)</div>
 <div><span classname="detail">SKILLS:</span> Empathy maps, storyboarding</div>
