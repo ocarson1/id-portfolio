@@ -67,51 +67,51 @@ const DynamicContent = () => {
             content: accessibleComponents,
             status: "active"
         },
-        {
-            id: 1,
-            title: "Web Collage",
-            date: 'Current',
-            description: 'Visualizing trending Google searches through a public exhibition',
-            category: 'Software Exhibition',
-            content: webcollage,
-            status: 'active',
-        },
-        {
-            id: 2,
-            title: 'Brown Arts Institute',
-            date: 'Current',
-            description: 'Assisting production staff and building a hypermedia wiki',
-            category: 'Software Exhibition',
-            content: bai,
-            status: 'coming'
-        },
-        {
-            id: 3,
-            title: 'Handwoven Youth',
-            date: '2024',
-            description: 'Developed a website for an emerging youth literacy nonprofit',
-            category: 'Software Education',
-            content: hwy,
-            status: 'coming'
-        },
-        {
-            id: 4,
-            title: 'AAPI History Museum',
-            date: '2024',
-            description: 'Co-designed and fabricated a travelling local history exhibit',
-            category: 'Design Exhibition',
-            content: aapi,
-            status: 'coming'
-        },
-        {
-            id: 5,
-            title: 'brown.edu',
-            date: '2023',
-            description: 'Migrated 600+ pages of content for univeristy site redesign',
-            category: 'Software',
-            content: ouc,
-            status: 'coming'
-        }
+        // {
+        //     id: 1,
+        //     title: "Web Collage",
+        //     date: 'Current',
+        //     description: 'Visualizing trending Google searches through a public exhibition',
+        //     category: 'Software Exhibition',
+        //     content: webcollage,
+        //     status: 'active',
+        // },
+        // {
+        //     id: 2,
+        //     title: 'Brown Arts Institute',
+        //     date: 'Current',
+        //     description: 'Assisting production staff and building a hypermedia wiki',
+        //     category: 'Software Exhibition',
+        //     content: bai,
+        //     status: 'coming'
+        // },
+        // {
+        //     id: 3,
+        //     title: 'Handwoven Youth',
+        //     date: '2024',
+        //     description: 'Developed a website for an emerging youth literacy nonprofit',
+        //     category: 'Software Education',
+        //     content: hwy,
+        //     status: 'coming'
+        // },
+        // {
+        //     id: 4,
+        //     title: 'AAPI History Museum',
+        //     date: '2024',
+        //     description: 'Co-designed and fabricated a travelling local history exhibit',
+        //     category: 'Design Exhibition',
+        //     content: aapi,
+        //     status: 'coming'
+        // },
+        // {
+        //     id: 5,
+        //     title: 'brown.edu',
+        //     date: '2023',
+        //     description: 'Migrated 600+ pages of content for univeristy site redesign',
+        //     category: 'Software',
+        //     content: ouc,
+        //     status: 'coming'
+        // }
 
     ];
 
