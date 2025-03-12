@@ -51,7 +51,7 @@ h2, .detail {
   top:59px;
   background-color: var(--dark);
   padding: 1em 0;
-  border-bottom: solid var(--grey);
+  border-bottom: 1px solid var(--grey);
   z-index: 999;
 
 
@@ -69,15 +69,15 @@ h2, .detail {
   position: sticky;
   top: 0;
   background-color: var(--dark);
-  border-bottom: solid transparent;
-  transition: border-bottom 0.1s ease-in;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 1px 0.1s ease-in;
   z-index: 999;
 
 }
 
 .sticky-nav.active {
   opacity: 1;
-  border-bottom: solid var(--grey);
+  border-bottom: 1px solid var(--grey);
 }
 
 .my-name {
