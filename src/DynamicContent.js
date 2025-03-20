@@ -7,6 +7,7 @@ import ouc from './content/brown-ouc.md'
 import webcollage from './content/web-collage.md'
 import bai from './content/bai.md'
 import personas from './content/personas.md'
+import rihousing from './content/rihousing.md'
 
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw';
@@ -50,10 +51,19 @@ const DynamicContent = () => {
     // Sample content data - you can replace this with your actual content
     const items = [
         {
+            id: 0,
+            title: "RIHousing",
+            date: "Current",
+            description: "Redesigning a housing resource for Rhode Islanders",
+            category: "Design",
+            content: rihousing,
+            status: "active"
+        },
+        {
             id: 1,
             title: "Wittern",
             date: "Current",
-            description: "Improving vending machine experience based on college student feedback",
+            description: "Understanding vending machine experiences based on college student feedback",
             category: "Design",
             content: personas,
             status: "active"
