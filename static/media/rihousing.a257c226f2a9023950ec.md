@@ -27,17 +27,20 @@ RIHousing.com provides important housing resources to Rhode Island homeowners, r
 </div>
 <div class="flex-1"></div>
 </div>
+<div class="rounded">
 
-![Screenshot of the current RIHousing.com home page](https://ocarson1.github.io/id-portfolio/images/rihousing-old.png)<div>*How RIHousing.com currently appears on my 13" laptop*</div>
+![Screenshot of the current RIHousing.com home page](https://ocarson1.github.io/id-portfolio/images/rihousing-old.png)<div><div style="font-size: 14px; color: white; padding-top: 10px; display: flex; justify-content: center">*How RIHousing.com currently appears on my 13" laptop*</div></div></div>
 
 <div class="three-column">
 <div class="text flex-3">
+<br />
 
 ## BACKGROUND
 
 The current user experience of RIHousing.com is riddled with usability and accessibility concerns. I organized my observations into five categories:
 
 </div>
+<br />
 <div class="flex-1"></div>
 </div>
 <div class="two-column">
@@ -64,7 +67,7 @@ The current user experience of RIHousing.com is riddled with usability and acces
 
 
 </div>
-
+<br />
 <div class="two-column">
 <div class="text flex-1">
 
@@ -90,7 +93,7 @@ The current user experience of RIHousing.com is riddled with usability and acces
 
 
 </div>
-
+<br />
 <div class="two-column">
 <div class="text flex-1">
 
@@ -106,5 +109,27 @@ The current user experience of RIHousing.com is riddled with usability and acces
 
 </div>
 
-
 </div>
+<br />
+
+## STYLE GUIDE
+
+<br />
+
+I condensed the style guidelines of the site into an organized color scheme, text hierarchy, and set of components. Because the site is primarily an informational resource for users, I wanted to create a look that was trustworthy and uncomplicated.
+
+<br />
+<div class="rounded">
+
+![Style guide for redesigned RIHousing site](https://ocarson1.github.io/id-portfolio/images/style-guide.png)</div>
+
+<br />
+<div class="rounded">
+
+![Annotated style guide for redesigned RIHousing site](https://ocarson1.github.io/id-portfolio/images/style-guide-annotated.png)</div>
+
+## FINAL DESIGNS
+
+## PREPARING FOR DEVELOPMENT
+
+## CONCLUSION
